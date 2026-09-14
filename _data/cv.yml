@@ -1,9 +1,8 @@
 cv:
   name: Inase Kondo
-  label: Master’s student in Computer Science
+  headline: Master’s student in Computer Science
   email: i-kondou@ist.osaka-u.ac.jp
   location: Osaka, Japan
-  summary: Researching bug-inducing commit identification and empirical software engineering at The University of Osaka.
   social_networks:
     - network: GitHub
       username: i-kondou
@@ -13,7 +12,7 @@ cv:
     Education:
       - institution: The University of Osaka
         area: Computer Science
-        studyType: Master’s program (enrolled)
+        degree: Master’s program (enrolled)
         start_date: 2025-04
         end_date: present
       - institution: Osaka University
