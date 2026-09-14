@@ -1,0 +1,74 @@
+name: Inase Kondo
+name_ja: 近藤 偉成
+photo: /assets/img/inase-kondo.jpg
+lab_url: https://sel.ist.osaka-u.ac.jp/
+linkedin_url: https://www.linkedin.com/in/inase-kondo-4b9a6439a/
+github_url: https://github.com/i-kondou
+researchmap_url: https://researchmap.jp/i-kondo
+email: i-kondou@ist.osaka-u.ac.jp
+orcid: 0009-0003-2907-9592
+updated: "2026-09-14"
+research:
+  - label: AI4SE
+    publication: peralta2026agentic
+  - label: Repository Mining
+    publication: kondo2026constraints
+    page: presentations
+  - label: Bugs
+    publication: kondo2026mvszz
+education:
+  - date: 2025.04 — 現在
+    date_en: April 2025 — Present
+    institution: 大阪大学大学院 情報科学研究科
+    institution_en: Graduate School of Information Science and Technology, The University of Osaka
+    program: コンピュータサイエンス専攻 博士前期課程
+    program_en: Master's program, Department of Computer Science
+  - date: 2021.04 — 2025.03
+    date_en: April 2021 — March 2025
+    institution: 大阪大学 基礎工学部
+    institution_en: School of Engineering Science, Osaka University
+    program: 情報科学科
+    program_en: Department of Information and Computer Sciences
+awards:
+  - date: SEPTEMBER 2026 · IPSJ SIGSE
+    title: 卓越研究賞
+    title_en: Outstanding Research Award
+    organization: 情報処理学会ソフトウェア工学研究会
+    organization_en: IPSJ Special Interest Group on Software Engineering
+    paper: "MV-SZZ: An Empirical Study of a Majority Voting-Based SZZ Method"
+    paper_en: "MV-SZZ: An Empirical Study of a Majority Voting-Based SZZ Method"
+    shared: true
+    url: https://researchmap.jp/i-kondo/awards/54939912
+  - date: APRIL 2026 · MSR 2026
+    title: Distinguished Mining Challenge Paper Award
+    title_en: Distinguished Mining Challenge Paper Award
+    paper: Why Are Agentic Pull Requests Merged or Rejected? An Empirical Study
+    paper_en: Why Are Agentic Pull Requests Merged or Rejected? An Empirical Study
+    shared: true
+    url: https://sel.ist.osaka-u.ac.jp/topics/award_MSR2026_i-kondou/index.html.ja
+  - date: APRIL 2026 · IEICE
+    title: 2025年度ソフトウェアサイエンス研究会研究奨励賞
+    title_en: FY2025 Research Encouragement Award
+    organization_en: IEICE Technical Committee on Software Science
+    paper: 関数の依存関係に基づく探索範囲を拡張したSZZ手法の初期調査
+    paper_en: A Preliminary Study of SZZ with an Expanded Search Scope Based on Function Dependencies
+    url: https://www.ist.osaka-u.ac.jp/japanese/news/newsDetailNews.php?id=591
+internships:
+  - organization: 株式会社松尾研究所
+    organization_en: Matsuo Institute, Inc.
+    period: 2026.05 — 現在
+    period_en: May 2026 — Present
+    role: 研究開発
+    role_en: Research & Development
+  - organization: 株式会社エムニ
+    organization_en: EMUNI, Inc.
+    period: 2025.04 — 2026.08
+    period_en: April 2025 — August 2026
+    role: AIエンジニア
+    role_en: AI Engineer
+  - organization: NTT DATA, Inc.
+    organization_en: NTT DATA, Inc.
+    period: "2025.09"
+    period_en: September 2025
+    role: 研究開発
+    role_en: Research & Development

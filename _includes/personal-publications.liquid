@@ -1,0 +1,53 @@
+{% assign text = site.data.locales[page.lang] %}
+{% assign heading = text.nav.publications %}
+{% assign intro = text.publications_intro %}
+{% assign categories = text.publication_filters %}
+{% assign filter_label = text.filter_label %}
+{% assign list_label = text.publication_list %}
+{% assign note = text.publication_note %}
+{% assign item_singular = 'publication' %}
+{% assign item_plural = 'publications' %}
+{% if page.page_id == 'presentations' %}
+  {% assign heading = text.nav.presentations %}
+  {% assign intro = text.presentations_intro %}
+  {% assign categories = text.presentation_filters %}
+  {% assign filter_label = text.presentation_filter_label %}
+  {% assign list_label = text.presentation_list %}
+  {% assign note = text.presentation_note %}
+  {% assign item_singular = 'presentation' %}
+  {% assign item_plural = 'presentations' %}
+{% endif %}
+<header class="page-heading">
+  <h1>{{ heading }}</h1>
+  <p>{{ intro }}</p>
+</header>
+<div
+  class="publication-filters"
+  role="group"
+  aria-label="{{ filter_label }}"
+  data-item-singular="{{ item_singular }}"
+  data-item-plural="{{ item_plural }}"
+  hidden
+>
+  <button type="button" data-filter="all" aria-pressed="true">{{ text.all }}</button>
+  {% for category in categories %}
+    <button type="button" data-filter="{{ category }}" aria-pressed="false">{{ text.categories[category] }}</button>
+  {% endfor %}
+</div>
+<p class="filter-status" aria-live="polite"></p>
+<div class="publication-list">
+  <h2 class="sr-only">{{ list_label }}</h2>
+  {% if page.page_id == 'presentations' %}
+    {% bibliography -f papers -T publication -q @*[category=国内研究会]||@*[category=ポスター] --group_by none %}
+  {% else %}
+    {% bibliography -f papers -T publication -q @*[reviewed=true] --group_by none %}
+  {% endif %}
+</div>
+<p class="source-note">
+  {{ note }}
+  {% if page.page_id == 'presentations' %}
+    <a href="{{ text.routes.publications | relative_url }}">{{ text.see_publications }}</a>
+  {% else %}
+    <a href="{{ text.routes.presentations | relative_url }}">{{ text.see_presentations }}</a>
+  {% endif %}
+</p>

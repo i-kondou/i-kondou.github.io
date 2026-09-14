@@ -1,0 +1,98 @@
+{% assign lang = page.lang | default: 'ja' %}
+{% assign publication_text = site.data.locales[lang] %}
+{% assign translated = null %}
+{% if lang == 'en' %}{% assign translated = site.data.publication_translations.papers[entry.key] %}{% endif %}
+{% assign review_status = 'unspecified' %}
+{% assign review_label = publication_text.review_unspecified %}
+{% if entry.reviewed == 'true' %}
+  {% assign review_status = 'reviewed' %}
+  {% assign review_label = publication_text.peer_reviewed %}
+{% elsif entry.reviewed == 'false' %}
+  {% assign review_status = 'unreviewed' %}
+  {% assign review_label = publication_text.not_peer_reviewed %}
+{% elsif entry.category == 'ポスター' %}
+  {% assign review_label = publication_text.categories[entry.category] %}
+{% endif %}
+<article id="{{ entry.key }}" class="publication" data-kind="{{ entry.category | escape }}">
+  <div class="publication-topline">
+    <span class="venue-tag" data-review="{{ review_status }}">
+      <span>{{ entry.abbr | split: ' ' | first | escape }}</span>
+      <span class="venue-year">{{ entry.year }}</span>
+      <span class="review-status">{{ review_label }}</span>
+    </span>
+    {% unless review_status == 'unspecified' and entry.category == 'ポスター' %}
+      <span>{{ publication_text.categories[entry.category] | escape }}</span>
+    {% endunless %}
+  </div>
+  <h3>
+    <a href="{% if entry.doi %}https://doi.org/{{ entry.doi }}{% else %}{{ entry.html }}{% endif %}">{{ translated.title | default: entry.title }}</a>
+  </h3>
+  {% if translated.translated_title %}
+    <details class="original-title">
+      <summary>{{ publication_text.translated_title }}</summary>
+      <p lang="ja">{{ entry.title }}</p>
+    </details>
+  {% endif %}
+  <p class="publication-authors">
+    {%- for author in entry.author_array -%}
+      {%- unless forloop.first -%}, {% endunless -%}
+      {%- assign is_self = false -%}
+      {%- if site.scholar.last_name contains author.last and site.scholar.first_name contains author.first -%}
+        {%- assign is_self = true -%}
+      {%- endif -%}
+      {%- if is_self -%}<strong>{%- endif -%}
+      {%- assign author_name = author.last | append: ' ' | append: author.first -%}
+      {%- assign author_en = site.data.publication_translations.authors[author_name] -%}
+      {%- if lang == 'en' and author_en -%}
+        {{ author_en }}
+      {%- elsif entry.category == '国内研究会' -%}
+        {{ author.last }}
+        {{ author.first }}
+      {%- else -%}
+        {{ author.first }}
+        {{ author.last }}
+      {%- endif -%}
+      {%- if is_self -%}</strong>{%- endif -%}
+    {%- endfor -%}
+  </p>
+  <p class="publication-venue">
+    {% if translated.venue -%}
+      {{- translated.venue -}}
+    {%- elsif entry.journal -%}
+      {{- entry.journal -}}
+    {%- elsif entry.booktitle -%}
+      {{- entry.booktitle -}}
+    {%- else -%}
+      {{- entry.howpublished -}}
+    {%- endif -%}
+    {%- if entry.volume -%}
+      , {{ entry.volume -}}
+      {%- if entry.number %}({{ entry.number }}){% endif -%}
+    {%- endif -%}
+    {%- if entry.pages %}, pp. {{ entry.pages | replace: '--', '–' }}{% endif %}, {{ entry.year }}.
+  </p>
+  {% if entry.summary %}
+    <p class="publication-summary">{{ translated.summary | default: entry.summary }}</p>
+  {% endif %}
+  {% if entry.award %}
+    <p class="award-note"><span aria-hidden="true">↗</span> {{ translated.award | default: entry.award }}</p>
+  {% endif %}
+  <div class="publication-links">
+    {% if entry.doi -%}
+      <a href="https://doi.org/{{ entry.doi }}">DOI <span aria-hidden="true">↗</span></a>
+    {%- endif %}
+    {% if entry.html -%}
+      <a href="{{ entry.html }}">
+        {{- publication_text.details }}
+        <span aria-hidden="true">↗</span></a
+      >
+    {%- endif %}
+    {% if entry.arxiv -%}
+      <a href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv <span aria-hidden="true">↗</span></a>
+    {%- endif %}
+    <details class="bibtex-details">
+      <summary>BibTeX</summary>
+      <pre><code>{{ entry.bibtex | hideCustomBibtex | escape }}</code></pre>
+    </details>
+  </div>
+</article>

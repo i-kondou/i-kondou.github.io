@@ -1,0 +1,25 @@
+{% case include.name %}
+  {% when 'researchmap' %}
+    <img class="social-icon" src="{{ '/assets/img/social/researchmap.gif' | relative_url }}" width="18" height="18" alt="" aria-hidden="true">
+  {% when 'github' %}
+    <span class="social-icon si si-github" aria-hidden="true"></span>
+  {% when 'linkedin' %}
+    <span class="social-icon si si-linkedin" aria-hidden="true"></span>
+  {% when 'orcid' %}
+    <span class="social-icon si si-orcid" aria-hidden="true"></span>
+  {% when 'email' %}
+    <svg
+      class="social-icon"
+      viewBox="0 0 24 24"
+      width="18"
+      height="18"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.7"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+      <path d="m3 6 9 7 9-7"></path>
+    </svg>
+{% endcase %}

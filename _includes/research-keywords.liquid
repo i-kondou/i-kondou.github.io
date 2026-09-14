@@ -1,0 +1,8 @@
+<ul class="research-keywords" lang="en">
+  {% for research in site.data.profile.research %}
+    {% assign research_page = research.page | default: 'publications' %}
+    <li>
+      <a href="{{ text.routes[research_page] | relative_url }}#{{ research.publication }}">{{ research.label }}</a>
+    </li>
+  {% endfor %}
+</ul>

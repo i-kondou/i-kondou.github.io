@@ -1,0 +1,27 @@
+# Display translations only. Original citation metadata stays in papers.bib.
+authors:
+  近藤 偉成: Inase Kondo
+  近藤 将成: Masanari Kondo
+  亀井 靖高: Yasutaka Kamei
+  肥後 芳樹: Yoshiki Higo
+  オリビエ ヌリ: Olivier Nourry
+papers:
+  kondo2025context:
+    title: A Context-Aware Development History for Improving Bug-Inducing Commit Identification with SZZ
+    translated_title: true
+    venue: IEICE Technical Report
+  kondo2026constraints:
+    title: An Empirical Study of Past Constraint Violations by Bug-Inducing Commits
+    translated_title: true
+    venue: IEICE Technical Report
+  kondo2026dependencies:
+    title: A Preliminary Study of SZZ with an Expanded Search Scope Based on Function Dependencies
+    translated_title: true
+    venue: IEICE Technical Report
+  kondo2026claude:
+    venue: Software Engineering Symposium 2026, Student International English Poster Session
+  kondo2026mvszz:
+    summary: An empirical study of identifying bug-inducing commits by combining token-level development histories with majority voting.
+    award: Outstanding Research Award, IPSJ SIGSE (September 2026)
+  peralta2026agentic:
+    summary: A collaborative study of why AI agents' pull requests are merged or rejected, examining review interactions and the reasons behind these decisions.

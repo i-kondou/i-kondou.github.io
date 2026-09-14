@@ -2,21 +2,20 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Inase # the website title (if blank, full name will be used instead)
-first_name:
+title: Inase Kondo # the website title (if blank, full name will be used instead)
+first_name: Inase
 middle_name:
 last_name: Kondo
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  研究・活動に関する情報はLinkedInとGitHubをご覧ください。
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal website of Inase Kondo.
+  近藤偉成 / Inase Kondo｜大阪大学大学院 情報科学研究科｜AI4SE・Repository Mining・Bugs
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+keywords: Inase Kondo, 近藤偉成, ソフトウェア工学, SZZ, MV-SZZ, software engineering # add your own keywords or leave empty
+lang: ja # the language of your site (for example: en, fr, cn, ru, etc.)
+icon: ik-mark.svg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://i-kondou.github.io # the base hostname & protocol for your site
 baseurl:
@@ -54,8 +53,8 @@ external_services:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
-search_enabled: true
+footer_fixed: false
+search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: true
@@ -91,17 +90,17 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Inase Kondo # blog_name will be displayed in your blog page
+blog_description: Software engineering research
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: false
 
 related_blog_posts:
-  enabled: true
+  enabled: false
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
@@ -128,17 +127,7 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+external_sources: []
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -155,15 +144,15 @@ newsletter:
 
 collections:
   books:
-    output: true
+    output: false
   news:
     defaults:
       layout: post
-    output: true
+    output: false
   projects:
-    output: true
+    output: false
   teachings:
-    output: true
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -185,6 +174,37 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
+  - AGENTS.md
+  - SITE_CONTENT.md
+  - QUICKSTART.md
+  - TROUBLESHOOTING.md
+  - ANALYTICS.md
+  - SEO.md
+  - docs/
+  - _posts/
+  - _books/
+  - _news/
+  - _projects/
+  - _teachings/
+  - node_modules/
+  - assets/json/
+  - assets/rendercv/
+  - assets/pdf/
+  - assets/html/
+  - assets/jupyter/
+  - assets/plotly/
+  - assets/video/
+  - assets/audio/
+  - assets/img/prof_pic.jpg
+  - assets/img/prof_pic_color.png
+  - _pages/blog.md
+  - _pages/books.md
+  - _pages/dropdown.md
+  - _pages/news.md
+  - _pages/profiles.md
+  - _pages/projects.md
+  - _pages/repositories.md
+  - _pages/teaching.md
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
@@ -279,8 +299,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Kondo, 近藤]
+  first_name: [Inase, 偉成]
 
   style: apa
   locale: en
@@ -300,6 +320,8 @@ scholar:
   details_link: Details
 
   query: "@*"
+  sort_by: year, month
+  order: descending
   group_by: year
   group_order: descending
 
@@ -314,6 +336,9 @@ enable_publication_badges:
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
   [
+    category,
+    reviewed,
+    summary,
     abbr,
     abstract,
     additional_info,
@@ -367,7 +392,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
   widths:
     - 480
     - 800

@@ -1,0 +1,7 @@
+{% assign text = site.data.locales[page.lang] %}
+<div class="page-heading">
+  <p>404</p>
+  <h1>{{ text.not_found }}</h1>
+  <p>{{ text.not_found_description }}</p>
+  <a class="button button-primary" href="{{ text.routes.home | relative_url }}">{{ text.back_home }}</a>
+</div>

@@ -1,0 +1,205 @@
+# Shared activity log, newest first. Home displays the first six eligible items.
+# Optional home fields override the short copy/link; home: false hides an item on home.
+# date_note identifies dates that refer to publication/conference timing,
+# rather than an unverified acceptance notification date.
+- id: sigse-award-2026
+  date: "2026.09"
+  home:
+    title: MV-SZZの論文が情報処理学会ソフトウェア工学研究会の卓越研究賞を受賞しました。
+    title_en: Our MV-SZZ paper received the Outstanding Research Award from IPSJ SIGSE.
+  tag: 受賞
+  tag_en: Award
+  title: MV-SZZの論文が卓越研究賞を受賞
+  title_en: Outstanding Research Award for MV-SZZ
+  description: >-
+    論文「MV-SZZ: An Empirical Study of a Majority Voting-Based SZZ Method」が、
+    情報処理学会ソフトウェア工学研究会の卓越研究賞を受賞しました。近藤将成氏、Daniel M. German氏、亀井靖高氏、肥後芳樹氏との共同研究による受賞です。
+  description_en: >-
+    Our paper “MV-SZZ: An Empirical Study of a Majority Voting-Based SZZ Method” received the Outstanding Research Award from IPSJ SIGSE.
+    The award is shared with Masanari Kondo, Daniel M. German, Yasutaka Kamei, and Yoshiki Higo.
+  url: https://researchmap.jp/i-kondo/awards/54939912
+  work: kondo2026mvszz
+  work_page: publications
+
+- id: ses-poster-2026
+  date: "2026.09.11"
+  home:
+    title: SES 2026でClaude Codeによるバグ混入コミット特定に関する英語ポスターを発表しました。
+    title_en: I presented an English poster on identifying bug-inducing commits with Claude Code at SES 2026.
+    tag: 発表
+  tag: ポスター発表
+  tag_en: Poster
+  title: SES 2026にて英語ポスター発表
+  title_en: English poster presentation at SES 2026
+  description: >-
+    神奈川県横浜市の慶應義塾大学日吉キャンパスで開催されたソフトウェアエンジニアリングシンポジウム2026（SES 2026）の学生国際英語ポスターセッションにて、
+    「Can Claude Code Find Bug-Inducing Commits? An Empirical Study of Identification, Investigation, and Justification」を発表しました。
+    Claude Codeによるバグ混入コミットの特定と、調査過程・根拠の説明を扱った研究です。
+  description_en: >-
+    I presented “Can Claude Code Find Bug-Inducing Commits? An Empirical Study of Identification, Investigation, and Justification”
+    at the Student International English Poster Session of Software Engineering Symposium 2026 (SES 2026), held at Keio University's Hiyoshi Campus in Yokohama, Kanagawa.
+    The study examines bug-inducing commit identification with Claude Code, including its investigation process and justifications.
+  url: https://researchmap.jp/i-kondo/presentations/54939950
+  work: kondo2026claude
+  work_page: presentations
+
+- id: sigss-constraints-2026
+  date: "2026.07"
+  home:
+    title: バグ混入コミットによる過去制約違反の実証研究を発表しました。
+    title_en: I presented an empirical study of past constraint violations by bug-inducing commits.
+    tag: 発表
+    url: https://sel.ist.osaka-u.ac.jp/lab-db/betuzuri/contents.ja/1339.html
+  tag: 研究会発表
+  tag_en: Talk
+  title: SIGSS / SIGSEの合同研究会にて研究発表
+  title_en: Research presentation at the joint SIGSS / SIGSE meeting
+  description: >-
+    北海道札幌市で開催されたソフトウェアサイエンス研究会（SIGSS）・ソフトウェア工学研究会（SIGSE）などの合同研究会にて、
+    「バグ混入コミットによる過去制約違反の実証研究」を発表しました。
+    バグが混入する変更と、それ以前のプログラムが満たしていた制約との関係を調べた研究です。
+  description_en: >-
+    I presented “An Empirical Study of Past Constraint Violations by Bug-Inducing Commits” at the joint meeting of SIGSS, SIGSE, and related technical committees in Sapporo, Hokkaido.
+    The study examines the relationship between bug-inducing changes and constraints satisfied by earlier versions of a program.
+  url: https://sel.ist.osaka-u.ac.jp/topics/SIGSS202607/index.html.ja
+  work: kondo2026constraints
+  work_page: presentations
+
+- id: mvszz-press-2026
+  date: "2026.05.08"
+  home:
+    title: MV-SZZに関する研究成果のプレスリリースが公開されました。
+    title_en: A press release about our MV-SZZ research was published.
+    tag: 研究成果
+    tag_en: Research
+    url: https://www.kyushu-u.ac.jp/ja/researches/view/1436
+  tag: プレスリリース
+  tag_en: Press release
+  title: MV-SZZの研究成果をプレスリリースで紹介
+  title_en: Press release on the MV-SZZ research
+  description: >-
+    大阪大学と九州大学から、MV-SZZの研究成果に関するプレスリリースが公開されました。
+    開発履歴をトークン単位で追跡し、多数決を組み合わせてバグ混入コミットを特定する手法を紹介しています。
+  description_en: >-
+    The University of Osaka and Kyushu University published press releases about our MV-SZZ research.
+    They introduce a method that combines token-level development histories with majority voting to identify bug-inducing commits.
+  url: https://resou.osaka-u.ac.jp/ja/research/2026/20260508_2
+  work: kondo2026mvszz
+  work_page: publications
+
+- id: tse-acceptance-2026
+  date: "2026.05.01"
+  home: false
+  date_note: オンライン公開月
+  date_note_en: Online publication
+  tag: 論文採択
+  tag_en: Paper accepted
+  title: MV-SZZの論文がTSEに採択・公開
+  title_en: MV-SZZ accepted and published in TSE
+  description: >-
+    論文「MV-SZZ: An Empirical Study of a Majority Voting-Based SZZ Method」が、
+    IEEE Transactions on Software Engineering（TSE）に採択され、オンライン公開されました。
+    トークン単位の開発履歴と多数決を組み合わせる手法を提案し、バグ混入コミットの特定精度を評価した研究です。
+  description_en: >-
+    Our paper “MV-SZZ: An Empirical Study of a Majority Voting-Based SZZ Method” was accepted and published online in IEEE Transactions on Software Engineering (TSE).
+    It proposes and evaluates a method that combines token-level development histories with majority voting to identify bug-inducing commits.
+  url: https://sel.ist.osaka-u.ac.jp/topics/TSE_i-kondou/index.html.ja
+  work: kondo2026mvszz
+  work_page: publications
+
+- id: msr-award-2026
+  date: "2026.04.14"
+  home:
+    title: MSR 2026 Distinguished Mining Challenge Paper Awardを共同受賞しました。
+    title_en: Our paper received the MSR 2026 Distinguished Mining Challenge Paper Award.
+  tag: 受賞
+  tag_en: Award
+  title: MSR 2026にてDistinguished Mining Challenge Paper Awardを受賞
+  title_en: Distinguished Mining Challenge Paper Award at MSR 2026
+  description: >-
+    共同研究論文「Why Are Agentic Pull Requests Merged or Rejected? An Empirical Study」が、
+    MSR 2026のDistinguished Mining Challenge Paper Awardを受賞しました。
+    AIエージェントが作成したプルリクエストのマージ・却下の理由と、人間によるレビューへの関与を分析した研究です。
+  description_en: >-
+    Our collaborative paper “Why Are Agentic Pull Requests Merged or Rejected? An Empirical Study” received the Distinguished Mining Challenge Paper Award at MSR 2026.
+    The study analyzes why AI agents’ pull requests are merged or rejected and how human reviewers are involved.
+  url: https://sel.ist.osaka-u.ac.jp/topics/award_MSR2026_i-kondou/index.html.ja
+  work: peralta2026agentic
+  work_page: publications
+
+- id: msr-acceptance-2026
+  date: "2026.04"
+  home: false
+  date_note: 会議開催月
+  date_note_en: Conference month
+  tag: 論文採択
+  tag_en: Paper accepted
+  title: AIエージェントのPRに関する共同研究論文がMSR 2026に採択
+  title_en: Collaborative paper on agentic pull requests accepted at MSR 2026
+  description: >-
+    共同研究論文「Why Are Agentic Pull Requests Merged or Rejected? An Empirical Study」が、
+    第23回International Conference on Mining Software Repositories（MSR 2026）のMining Challengeトラックに採択されました。
+    AIエージェントのプルリクエストを、レビューでのやり取りと判断の背景から調べています。
+  description_en: >-
+    Our collaborative paper “Why Are Agentic Pull Requests Merged or Rejected? An Empirical Study” was accepted to the Mining Challenge track of the 23rd International Conference on Mining Software Repositories (MSR 2026).
+    It examines agentic pull requests through review interactions and the reasons behind merge and rejection decisions.
+  url: https://2026.msrconf.org/details/msr-2026-mining-challenge/15/Why-Are-Agentic-Pull-Requests-Merged-or-Rejected-An-Empirical-Study
+  work: peralta2026agentic
+  work_page: publications
+
+- id: sigss-award-2026
+  date: "2026.04.01"
+  home:
+    title: 2025年度ソフトウェアサイエンス研究会研究奨励賞を受賞しました。
+    title_en: I received the FY2025 Research Encouragement Award from the IEICE Technical Committee on Software Science.
+  tag: 受賞
+  tag_en: Award
+  title: ソフトウェアサイエンス研究会研究奨励賞を受賞
+  title_en: Research Encouragement Award from SIGSS
+  description: >-
+    「関数の依存関係に基づく探索範囲を拡張したSZZ手法の初期調査」に対して、
+    2025年度電子情報通信学会ソフトウェアサイエンス研究会研究奨励賞を受賞しました。
+    2026年3月の同研究会で発表した研究が対象です。
+  description_en: >-
+    I received the FY2025 Research Encouragement Award from the IEICE Technical Committee on Software Science for
+    “A Preliminary Study of SZZ with an Expanded Search Scope Based on Function Dependencies.”
+    The award recognizes the research presented at the March 2026 SIGSS meeting.
+  url: https://www.ist.osaka-u.ac.jp/japanese/news/newsDetailNews.php?id=591
+  work: kondo2026dependencies
+  work_page: presentations
+
+- id: sigss-dependencies-2026
+  date: "2026.03"
+  home: false
+  tag: 研究会発表
+  tag_en: Talk
+  title: 対馬のソフトウェアサイエンス研究会にて研究発表
+  title_en: Research presentation at SIGSS in Tsushima
+  description: >-
+    長崎県対馬市で開催されたソフトウェアサイエンス研究会（SIGSS）にて、
+    「関数の依存関係に基づく探索範囲を拡張したSZZ手法の初期調査」を発表しました。
+    関数間の依存関係を利用して、バグ混入コミットを探す範囲を広げる手法を検討した研究です。
+  description_en: >-
+    I presented “A Preliminary Study of SZZ with an Expanded Search Scope Based on Function Dependencies” at the SIGSS meeting in Tsushima, Nagasaki.
+    The study explores using dependencies between functions to broaden the search for bug-inducing commits.
+  url: https://sel.ist.osaka-u.ac.jp/topics/SIGSS202603/index.html.ja
+  work: kondo2026dependencies
+  work_page: presentations
+
+- id: sigss-context-2025
+  date: "2025.01"
+  home: false
+  tag: 研究会発表
+  tag_en: Talk
+  title: 鹿児島のソフトウェアサイエンス研究会にて研究発表
+  title_en: Research presentation at SIGSS in Kagoshima
+  description: >-
+    鹿児島で開催されたソフトウェアサイエンス研究会（SIGSS）にて、
+    「SZZ手法によるバグ混入コミット推定精度向上のためのコンテキストを考慮した開発履歴の提案」を発表しました。
+    開発履歴の表現に着目し、SZZ手法によるバグ混入コミットの推定精度の改善を目指した研究です。
+  description_en: >-
+    I presented “A Context-Aware Development History for Improving Bug-Inducing Commit Identification with SZZ” at the SIGSS meeting in Kagoshima.
+    The study explores how the representation of development histories can improve SZZ’s identification of bug-inducing commits.
+  url: https://sel.ist.osaka-u.ac.jp/topics/SIGSS202501/index.html.ja
+  work: kondo2025context
+  work_page: presentations

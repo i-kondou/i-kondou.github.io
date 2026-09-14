@@ -1,0 +1,152 @@
+ja:
+  routes:
+    home: /
+    research: /#research
+    publications: /publications/
+    presentations: /presentations/
+    activities: /activities/
+    cv: /cv/
+    not_found: /404.html
+  nav:
+    home: ホーム
+    publications: 論文
+    presentations: 発表
+    activities: 活動
+    cv: プロフィール
+  skip: 本文へ移動
+  navigation: メインナビゲーション
+  home_label: Inase Kondo ホーム
+  theme_toggle: ダークモード切り替え
+  description: 近藤偉成｜大阪大学大学院 情報科学研究科｜AI4SE・Repository Mining・Bugs
+  name: 近藤 偉成
+  name_secondary: Inase Kondo
+  name_secondary_lang: en
+  photo_alt: 近藤偉成のプロフィール写真
+  university: 大阪大学大学院 情報科学研究科
+  program: コンピュータサイエンス専攻 博士前期課程
+  lab: ソフトウェア工学講座（肥後研究室）
+  lab_short: 肥後研究室
+  research_heading: 研究分野
+  selected_work: 主な論文
+  all_publications: すべての論文
+  news: 最近の活動
+  contact: 連絡先
+  contact_intro: 研究や活動に関するご連絡は、メールでお寄せください。
+  affiliation: 所属
+  education: 学歴
+  research_area: 研究分野
+  members: 研究室のメンバーページ
+  on_researchmap: researchmapで見る
+  view_publications: 論文を見る
+  awards: 受賞
+  award_details: 受賞情報
+  shared_award: 共同研究による受賞
+  links: 外部リンク
+  publications_intro: 査読付きの学術論文・国際会議論文。
+  presentations_intro: 研究会・シンポジウム・ポスター発表。
+  activities_intro: 論文の採択、研究会・シンポジウムでの発表、受賞などの活動記録とインターン参加歴。
+  activity_sections: 年別の活動とインターン参加歴
+  activity_publication: 論文の詳細
+  activity_presentation: 発表の詳細
+  activity_source: 関連リンク
+  internships: インターン参加歴
+  filter_label: 論文の種別で絞り込み
+  presentation_filter_label: 発表の種別で絞り込み
+  publication_filters: [学術論文, 国際会議]
+  presentation_filters: [国内研究会, ポスター]
+  all: すべて
+  categories:
+    学術論文: 学術論文
+    国際会議: 国際会議
+    国内研究会: 国内研究会
+    ポスター: ポスター
+  peer_reviewed: 査読あり
+  not_peer_reviewed: 査読なし
+  review_unspecified: 査読区分未記載
+  publication_list: 論文一覧
+  presentation_list: 発表一覧
+  publication_note: 各論文の書誌情報・DOIは項目内のリンクから確認できます。
+  presentation_note: 各発表の書誌情報は項目内のリンクから確認できます。
+  see_presentations: 研究会・ポスター発表はこちら
+  see_publications: 査読付き論文はこちら
+  details: 詳細
+  not_found: ページが見つかりません。
+  not_found_description: URLをご確認いただくか、ホームページからお探しください。
+  back_home: ホームへ戻る
+en:
+  routes:
+    home: /en/
+    research: /en/#research
+    publications: /en/publications/
+    presentations: /en/presentations/
+    activities: /en/activities/
+    cv: /en/cv/
+    not_found: /en/404.html
+  nav:
+    home: Home
+    publications: Publications
+    presentations: Presentations
+    activities: Activities
+    cv: Profile
+  skip: Skip to content
+  navigation: Main navigation
+  home_label: Inase Kondo home
+  theme_toggle: Toggle dark mode
+  description: Inase Kondo | The University of Osaka | AI4SE, Repository Mining, Bugs
+  name: Inase Kondo
+  name_secondary: 近藤 偉成
+  name_secondary_lang: ja
+  photo_alt: Portrait of Inase Kondo
+  university: Graduate School of Information Science and Technology, The University of Osaka
+  program: Master's student, Department of Computer Science
+  lab: Software Engineering Laboratory (Higo Lab)
+  lab_short: Higo Lab
+  research_heading: Research interests
+  selected_work: Selected publications
+  all_publications: All publications
+  news: Recent activities
+  contact: Contact
+  contact_intro: Please contact me by email about my research and activities.
+  affiliation: Affiliation
+  education: Education
+  research_area: Research
+  members: Laboratory members
+  on_researchmap: View on researchmap
+  view_publications: View publications
+  awards: Awards
+  award_details: Award details
+  shared_award: Award shared with coauthors
+  links: Links
+  publications_intro: Peer-reviewed journal articles and conference papers.
+  presentations_intro: Technical reports, symposium presentations, and posters.
+  activities_intro: A record of paper acceptances, research presentations, awards, other research news, and internships.
+  activity_sections: Activities by year and internships
+  activity_publication: Paper details
+  activity_presentation: Presentation details
+  activity_source: Related link
+  internships: Internships
+  filter_label: Filter publications by type
+  presentation_filter_label: Filter presentations by type
+  publication_filters: [学術論文, 国際会議]
+  presentation_filters: [国内研究会, ポスター]
+  all: All
+  categories:
+    学術論文: Journal article
+    国際会議: Conference paper
+    国内研究会: Technical report
+    ポスター: Poster
+  peer_reviewed: Peer-reviewed
+  not_peer_reviewed: Not peer-reviewed
+  review_unspecified: Review status unspecified
+  publication_list: Publication list
+  presentation_list: Presentation list
+  publication_note: Each paper links to its publication or bibliographic record.
+  presentation_note: Each item links to its bibliographic record. English translations are marked for Japanese titles; BibTeX retains the original bibliographic information.
+  see_presentations: View technical reports and poster presentations
+  see_publications: View peer-reviewed publications
+  details: Details
+  translated_title: In Japanese · title translated
+  original_title: Original Japanese title
+  not_found: Page not found.
+  not_found_description: Please check the URL or use the home page to find what you need.
+  back_home: Back to home

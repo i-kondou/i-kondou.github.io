@@ -1,0 +1,82 @@
+{% assign text = site.data.locales[page.lang] %}
+{% assign suffix = '' %}
+{% if page.lang == 'en' %}{% assign suffix = '_en' %}{% endif %}
+{% assign title_field = 'title' | append: suffix %}
+{% assign tag_field = 'tag' | append: suffix %}
+{% assign period_field = 'period' | append: suffix %}
+{% assign organization_field = 'organization' | append: suffix %}
+{% assign role_field = 'role' | append: suffix %}
+{% assign description_field = 'description' | append: suffix %}
+{% assign date_note_field = 'date_note' | append: suffix %}
+{% assign years = site.data.activities | group_by_exp: 'item', 'item.date | slice: 0, 4' %}
+<header class="page-heading">
+  <h1>{{ text.nav.activities }}</h1>
+  <p>{{ text.activities_intro }}</p>
+</header>
+<div class="activity-jump-links" aria-label="{{ text.activity_sections }}">
+  {% for year in years %}
+    <a href="#activity-{{ year.name }}">{{ year.name }}</a>
+  {% endfor %}
+  {% if site.data.profile.internships.size > 0 %}
+    <a href="#internships-title">{{ text.internships }}</a>
+  {% endif %}
+</div>
+{% for year in years %}
+  <section class="activity-section" aria-labelledby="activity-{{ year.name }}">
+    <h2 id="activity-{{ year.name }}">{{ year.name }}</h2>
+    <ol class="activity-list">
+      {% for item in year.items %}
+        <li id="{{ item.id }}">
+          <div class="activity-meta">
+            {% assign month = item.date | slice: 0, 7 %}
+            <time datetime="{{ month | replace: '.', '-' }}">{{ month }}</time>
+            {% if item[date_note_field] -%}
+              <span>{{ item[date_note_field] }}</span>
+            {%- endif %}
+            <span class="activity-tag">{{ item[tag_field] }}</span>
+          </div>
+          <article aria-labelledby="{{ item.id }}-title">
+            <h3 id="{{ item.id }}-title">{{ item[title_field] }}</h3>
+            <p>{{ item[description_field] }}</p>
+            <div class="activity-links">
+              {% if item.work %}
+                <a href="{{ text.routes[item.work_page] | relative_url }}#{{ item.work }}">
+                  {%- if item.work_page == 'presentations' -%}{{ text.activity_presentation }}{%- else -%}{{ text.activity_publication }}{%- endif -%}
+                </a>
+              {% endif %}
+              <a href="{{ item.url }}">{{ text.activity_source }}</a>
+            </div>
+          </article>
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+{% endfor %}
+{% if site.data.profile.internships.size > 0 %}
+  <section class="activity-section" aria-labelledby="internships-title">
+    <h2 id="internships-title">{{ text.internships }}</h2>
+    <div class="award-list">
+      {% for item in site.data.profile.internships %}
+        <article>
+          <p class="eyebrow">{{ item[period_field] }}</p>
+          <h3>
+            {% if item.url -%}
+              <a href="{{ item.url }}">{{ item[organization_field] }}</a>
+            {%- else -%}
+              {{- item[organization_field] -}}
+            {%- endif %}
+          </h3>
+          {% if item[role_field] %}
+            <p>{{ item[role_field] }}</p>
+          {% endif %}
+          {% if item[description_field] %}
+            <p>{{ item[description_field] }}</p>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+    <p class="internship-source">
+      <a class="social-link text-link" href="{{ site.data.profile.linkedin_url }}">{% include social-icon.liquid name='linkedin' %}LinkedIn</a>
+    </p>
+  </section>
+{% endif %}
