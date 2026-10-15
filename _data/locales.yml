@@ -42,9 +42,9 @@ ja:
   award_details: 受賞情報
   shared_award: 共同研究による受賞
   links: 外部リンク
-  publications_intro: 査読付きの学術論文・国際会議論文。
+  publications_intro: プレプリント・査読付きの学術論文・国際会議論文。
   presentations_intro: 研究会・シンポジウム・ポスター発表。
-  activities_intro: 論文の採択、研究会・シンポジウムでの発表、受賞などの活動記録とインターン参加歴。
+  activities_intro: プレプリントの公開、論文の採択、研究会・シンポジウムでの発表、受賞などの活動記録とインターン参加歴。
   activity_sections: 年別の活動とインターン参加歴
   activity_publication: 論文の詳細
   activity_presentation: 発表の詳細
@@ -52,15 +52,17 @@ ja:
   internships: インターン参加歴
   filter_label: 論文の種別で絞り込み
   presentation_filter_label: 発表の種別で絞り込み
-  publication_filters: [学術論文, 国際会議]
+  publication_filters: [プレプリント, 学術論文, 国際会議]
   presentation_filters: [国内研究会, ポスター]
   all: すべて
   categories:
+    プレプリント: Preprint
     学術論文: 学術論文
     国際会議: 国際会議
     国内研究会: 国内研究会
     ポスター: ポスター
   peer_reviewed: 査読あり
+  under_review: Under review
   not_peer_reviewed: 査読なし
   review_unspecified: 査読区分未記載
   publication_list: 論文一覧
@@ -68,7 +70,7 @@ ja:
   publication_note: 各論文の書誌情報・DOIは項目内のリンクから確認できます。
   presentation_note: 各発表の書誌情報は項目内のリンクから確認できます。
   see_presentations: 研究会・ポスター発表はこちら
-  see_publications: 査読付き論文はこちら
+  see_publications: 論文・プレプリントはこちら
   details: 詳細
   not_found: ページが見つかりません。
   not_found_description: URLをご確認いただくか、ホームページからお探しください。
@@ -117,9 +119,9 @@ en:
   award_details: Award details
   shared_award: Award shared with coauthors
   links: Links
-  publications_intro: Peer-reviewed journal articles and conference papers.
+  publications_intro: Preprints, peer-reviewed journal articles, and conference papers.
   presentations_intro: Technical reports, symposium presentations, and posters.
-  activities_intro: A record of paper acceptances, research presentations, awards, other research news, and internships.
+  activities_intro: A record of preprints, paper acceptances, research presentations, awards, other research news, and internships.
   activity_sections: Activities by year and internships
   activity_publication: Paper details
   activity_presentation: Presentation details
@@ -127,15 +129,17 @@ en:
   internships: Internships
   filter_label: Filter publications by type
   presentation_filter_label: Filter presentations by type
-  publication_filters: [学術論文, 国際会議]
+  publication_filters: [プレプリント, 学術論文, 国際会議]
   presentation_filters: [国内研究会, ポスター]
   all: All
   categories:
+    プレプリント: Preprint
     学術論文: Journal article
     国際会議: Conference paper
     国内研究会: Technical report
     ポスター: Poster
   peer_reviewed: Peer-reviewed
+  under_review: Under review
   not_peer_reviewed: Not peer-reviewed
   review_unspecified: Review status unspecified
   publication_list: Publication list
@@ -143,7 +147,7 @@ en:
   publication_note: Each paper links to its publication or bibliographic record.
   presentation_note: Each item links to its bibliographic record. English translations are marked for Japanese titles; BibTeX retains the original bibliographic information.
   see_presentations: View technical reports and poster presentations
-  see_publications: View peer-reviewed publications
+  see_publications: View publications and preprints
   details: Details
   translated_title: In Japanese · title translated
   original_title: Original Japanese title

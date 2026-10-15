@@ -2,6 +2,25 @@
 # Optional home fields override the short copy/link; home: false hides an item on home.
 # date_note identifies dates that refer to publication/conference timing,
 # rather than an unverified acceptance notification date.
+- id: rethinking-szz-preprint-2026
+  date: "2026.10"
+  home:
+    title: Claude CodeからSZZの探索戦略を検討した論文のプレプリントをarXivで公開しました（Under review）。
+    title_en: Our preprint on SZZ search strategies informed by Claude Code is available on arXiv (under review).
+  tag: プレプリント
+  tag_en: Preprint
+  title: Rethinking SZZ Search Strategiesのプレプリントを公開
+  title_en: Preprint of Rethinking SZZ Search Strategies available on arXiv
+  description: >-
+    論文「Rethinking SZZ Search Strategies: Lessons from Claude Code」をarXivで公開しました。現在査読中（Under review）です。
+    Claude Codeによるバグ混入コミットの特定精度と調査過程を分析し、SZZ手法の探索戦略を検討した研究です。
+  description_en: >-
+    Our paper “Rethinking SZZ Search Strategies: Lessons from Claude Code” is available as an arXiv preprint and is currently under review.
+    The study examines Claude Code's accuracy and investigation process in identifying bug-inducing commits to inform SZZ search strategies.
+  url: https://arxiv.org/abs/2610.14462
+  work: kondo2026rethinking
+  work_page: publications
+
 - id: sigse-award-2026
   date: "2026.09"
   home:

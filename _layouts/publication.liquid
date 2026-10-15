@@ -4,7 +4,10 @@
 {% if lang == 'en' %}{% assign translated = site.data.publication_translations.papers[entry.key] %}{% endif %}
 {% assign review_status = 'unspecified' %}
 {% assign review_label = publication_text.review_unspecified %}
-{% if entry.reviewed == 'true' %}
+{% if entry.review_status == 'under-review' %}
+  {% assign review_status = 'under-review' %}
+  {% assign review_label = publication_text.under_review %}
+{% elsif entry.reviewed == 'true' %}
   {% assign review_status = 'reviewed' %}
   {% assign review_label = publication_text.peer_reviewed %}
 {% elsif entry.reviewed == 'false' %}
@@ -25,7 +28,9 @@
     {% endunless %}
   </div>
   <h3>
-    <a href="{% if entry.doi %}https://doi.org/{{ entry.doi }}{% else %}{{ entry.html }}{% endif %}">{{ translated.title | default: entry.title }}</a>
+    <a href="{% if entry.doi %}https://doi.org/{{ entry.doi }}{% else %}{{ entry.html | default: entry.url }}{% endif %}">
+      {{- translated.title | default: entry.title -}}
+    </a>
   </h3>
   {% if translated.translated_title %}
     <details class="original-title">

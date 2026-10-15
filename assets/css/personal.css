@@ -295,7 +295,8 @@ nav a[aria-current="page"] {
   color: var(--reviewed-ink);
   border-color: var(--reviewed-line);
 }
-.venue-tag[data-review="unreviewed"] {
+.venue-tag[data-review="unreviewed"],
+.venue-tag[data-review="under-review"] {
   background: var(--unreviewed-bg);
   color: var(--unreviewed-ink);
   border-color: var(--unreviewed-line);

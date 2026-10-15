@@ -338,6 +338,7 @@ filtered_bibtex_keywords:
   [
     category,
     reviewed,
+    review_status,
     summary,
     abbr,
     abstract,

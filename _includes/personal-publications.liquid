@@ -40,7 +40,7 @@
   {% if page.page_id == 'presentations' %}
     {% bibliography -f papers -T publication -q @*[category=国内研究会]||@*[category=ポスター] --group_by none %}
   {% else %}
-    {% bibliography -f papers -T publication -q @*[reviewed=true] --group_by none %}
+    {% bibliography -f papers -T publication -q @*[reviewed=true]||@*[category=プレプリント] --group_by none %}
   {% endif %}
 </div>
 <p class="source-note">
