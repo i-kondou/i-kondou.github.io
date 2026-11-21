@@ -2,6 +2,34 @@
 # Optional home fields override the short copy/link; home: false hides an item on home.
 # date_note identifies dates that refer to publication/conference timing,
 # rather than an unverified acceptance notification date.
+- id: szzbench-preprint-2026
+  date: "2026.11"
+  tag: プレプリント
+  tag_en: Preprint
+  title: SZZBenchの論文をarXivで公開しました。
+  title_en: Our SZZBench preprint is available on arXiv.
+  description: >-
+    SZZBenchは、どのコミットでバグが混入したかをあらかじめ定めたGit履歴を生成します。これを使って、SZZの各実装がどのような変更履歴でバグ混入コミットを特定できるかを調べます。
+  description_en: >-
+    SZZBench generates Git histories in which the commits that introduced a bug are known. We use these histories to examine when different SZZ implementations identify those commits.
+  url: https://arxiv.org/abs/2611.17669
+  work: higo2026szzbench
+  work_page: publications
+
+- id: fose-poster-2026
+  date: "2026.11.13"
+  tag: ポスター発表
+  tag_en: Poster
+  title: FOSE 2026でJIT欠陥予測の評価についてポスター発表しました。
+  title_en: I presented a poster on evaluating JIT defect prediction at FOSE 2026.
+  description: >-
+    秋田で開催された第33回ソフトウェア工学の基礎ワークショップ（FOSE 2026）で、「開発者が特定した不具合混入コミットに基づくJIT欠陥予測の評価」を発表しました。
+  description_en: >-
+    I presented “Evaluating JIT Defect Prediction with Developer-Identified Bug-Inducing Commits” at the FOSE 2026 poster session in Akita, Japan.
+  url: https://fose.jssst.or.jp/fose2026/program.html#day2
+  work: kondo2026jit
+  work_page: presentations
+
 - id: rethinking-szz-preprint-2026
   date: "2026.10"
   home:
@@ -61,6 +89,18 @@
   url: https://researchmap.jp/i-kondo/presentations/54939950
   work: kondo2026claude
   work_page: presentations
+
+- id: ses-icse-reading-2026
+  date: "2026.09.10"
+  tag: 勉強会運営
+  tag_en: Workshop organization
+  title: SES 2026で「ICSE 2026 勉強会」の討論リーダを務めました。
+  title_en: I co-organized the ICSE 2026 reading group at SES 2026.
+  description: >-
+    4名の討論リーダの一人として勉強会の運営に携わりました。会場は慶應義塾大学日吉キャンパスで、参加者がICSE 2026の論文を短い発表で紹介し合いました。
+  description_en: >-
+    I served as one of four discussion leaders at the workshop on Keio University's Hiyoshi Campus, where participants gave short talks on papers from ICSE 2026.
+  url: https://ses.sigse.jp/2026/workshop.html#ws1
 
 - id: sigss-constraints-2026
   date: "2026.07"

@@ -50,9 +50,8 @@
       {%- assign author_en = site.data.publication_translations.authors[author_name] -%}
       {%- if lang == 'en' and author_en -%}
         {{ author_en }}
-      {%- elsif entry.category == '国内研究会' -%}
-        {{ author.last }}
-        {{ author.first }}
+      {%- elsif author_en or entry.category == '国内研究会' -%}
+        {{ author_name }}
       {%- else -%}
         {{ author.first }}
         {{ author.last }}
