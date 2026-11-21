@@ -61,6 +61,7 @@ When modifying `_config.yml`, these **must be updated together**:
 
 ## Development Workflow
 
+- Before adding or updating a publication, presentation, or activity, follow the [site content checklist](SITE_CONTENT.md#業績を追記するときの確認). Use the Claude Code SZZ entry as the reference for under-review preprints. After editing, build the site and run the preprint check documented there.
 - **Git & Commits:** For commit message format and Git practices, see [.github/GIT_WORKFLOW.md](.github/GIT_WORKFLOW.md).
 - **Code-Specific Instructions:** Consult the relevant instruction file for your code type.
 

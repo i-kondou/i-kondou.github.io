@@ -4,13 +4,18 @@
 # rather than an unverified acceptance notification date.
 - id: szzbench-preprint-2026
   date: "2026.11"
+  home:
+    title: SZZBenchのプレプリントをarXivで公開しました（Under review）。
+    title_en: Our SZZBench preprint is available on arXiv (under review).
   tag: プレプリント
   tag_en: Preprint
-  title: SZZBenchのプレプリントをarXivで公開しました（査読中）。
-  title_en: Our SZZBench paper is under review and available as a preprint on arXiv.
+  title: SZZBenchのプレプリントをarXivで公開
+  title_en: SZZBench preprint available on arXiv
   description: >-
+    SZZBenchの論文は現在査読中（Under review）です。
     SZZBenchは、どのコミットでバグが混入したかをあらかじめ定めたGit履歴を生成します。これを使って、SZZの各実装がどのような変更履歴でバグ混入コミットを特定できるかを調べます。
   description_en: >-
+    Our SZZBench paper is under review.
     SZZBench generates Git histories in which the commits that introduced a bug are known. We use these histories to examine when different SZZ implementations identify those commits.
   url: https://arxiv.org/abs/2611.17669
   work: higo2026szzbench
