@@ -6,8 +6,8 @@
   date: "2026.11"
   tag: プレプリント
   tag_en: Preprint
-  title: SZZBenchの論文をarXivで公開しました。
-  title_en: Our SZZBench preprint is available on arXiv.
+  title: SZZBenchのプレプリントをarXivで公開しました（査読中）。
+  title_en: Our SZZBench paper is under review and available as a preprint on arXiv.
   description: >-
     SZZBenchは、どのコミットでバグが混入したかをあらかじめ定めたGit履歴を生成します。これを使って、SZZの各実装がどのような変更履歴でバグ混入コミットを特定できるかを調べます。
   description_en: >-
